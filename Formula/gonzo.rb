@@ -5,21 +5,21 @@
 class Gonzo < Formula
   desc "Gonzo! The Go based TUI log analysis tool"
   homepage "https://github.com/control-theory/gonzo"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.1.6/gonzo-0.1.6-darwin-amd64.tar.gz"
-      sha256 "c371ee72d852611823519d09e62b43ec1d8743eb3d4fcf2f1e3594313a14b8a6"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.1.7/gonzo-0.1.7-darwin-amd64.tar.gz"
+      sha256 "5609c175b4619c2fdb43504b18fa532078bed8af9bac5c5a09d059f9e5b40423"
 
       def install
         bin.install "gonzo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.1.6/gonzo-0.1.6-darwin-arm64.tar.gz"
-      sha256 "cae9c05f2bfce3b7fdf6b26002b406e7c0dc1f10b9f67c412e2ee774e4fbdfdd"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.1.7/gonzo-0.1.7-darwin-arm64.tar.gz"
+      sha256 "da1ec7dc0e8c0c1e7d57e63fc906552c42f13d7cc9aa5fdde052833f8496c47f"
 
       def install
         bin.install "gonzo"
@@ -28,16 +28,16 @@ class Gonzo < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.1.6/gonzo-0.1.6-linux-amd64.tar.gz"
-      sha256 "4df2b446cc56acb0c8a8f204418b8dae3b0f2d8369183293467ba90b0ad5dddc"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/control-theory/gonzo/releases/download/v0.1.7/gonzo-0.1.7-linux-amd64.tar.gz"
+      sha256 "35895ee61264b48ed0a083e09338f8571b79686a544efaf93466c0e86d837e37"
       def install
         bin.install "gonzo"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.1.6/gonzo-0.1.6-linux-arm64.tar.gz"
-      sha256 "74e894c4a76664191afc6c63dbad7b2f81acc66c2c45e957b7f112f2257abcdc"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/control-theory/gonzo/releases/download/v0.1.7/gonzo-0.1.7-linux-arm64.tar.gz"
+      sha256 "299054a297c8dc464038c3cb4120b37d4a0ea7888ff6a1c8eba68dbca81bd377"
       def install
         bin.install "gonzo"
       end
