@@ -5,21 +5,21 @@
 class Gonzo < Formula
   desc "Gonzo! The Go based TUI log analysis tool"
   homepage "https://github.com/control-theory/gonzo"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.0/gonzo-0.3.0-darwin-amd64.tar.gz"
-      sha256 "7bfb12406395f0931aae0b5e8aa9b4c83ea1f5d6f09f20d77b56a5d35c969418"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-darwin-amd64.tar.gz"
+      sha256 "0084fbc46f0a048580cf3fee96d6b747d1fb77fdf727dcaed647cc997906f2e3"
 
       def install
         bin.install "gonzo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.0/gonzo-0.3.0-darwin-arm64.tar.gz"
-      sha256 "6c9d25f41f8ac721c875ac0a004220c7aa1d4ae89b4ecdf388b49f0f72824d95"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-darwin-arm64.tar.gz"
+      sha256 "610097e4abe5b692e3b2c81acc424ee058051e5779f46bd00c9e659208485942"
 
       def install
         bin.install "gonzo"
@@ -29,15 +29,15 @@ class Gonzo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.0/gonzo-0.3.0-linux-amd64.tar.gz"
-      sha256 "22891dcdc04fdcbf138b36615d034d985e8c7d4353c41ec64c998e8f48a0f9d7"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-linux-amd64.tar.gz"
+      sha256 "73300569328549d4c08f322191a616da35d597ea230e447ada47095a4f6359a7"
       def install
         bin.install "gonzo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.0/gonzo-0.3.0-linux-arm64.tar.gz"
-      sha256 "4d9f40e8301c751c91d344f03c76d35b295eb9ee0fe19666fd671a2cedbaf241"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-linux-arm64.tar.gz"
+      sha256 "669ecae052566304559e1de47fea1efbc4904c9ba36ed8a4f873957e3bf8f1dc"
       def install
         bin.install "gonzo"
       end
