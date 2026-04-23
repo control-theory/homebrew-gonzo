@@ -5,23 +5,23 @@
 class Gonzo < Formula
   desc "Gonzo! The Go based TUI log analysis tool"
   homepage "https://github.com/control-theory/gonzo"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-darwin-amd64.tar.gz"
-      sha256 "0084fbc46f0a048580cf3fee96d6b747d1fb77fdf727dcaed647cc997906f2e3"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.2/gonzo-0.3.2-darwin-amd64.tar.gz"
+      sha256 "4c27450e28767d3aafa94d6d0de0cca918012e105fb8d5f96d45f1ad9f292f89"
 
-      def install
+      define_method(:install) do
         bin.install "gonzo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-darwin-arm64.tar.gz"
-      sha256 "610097e4abe5b692e3b2c81acc424ee058051e5779f46bd00c9e659208485942"
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.2/gonzo-0.3.2-darwin-arm64.tar.gz"
+      sha256 "d5a4ba04064b07d66534ba43f54c722bc64aa6783f488eef8d117b84a4370761"
 
-      def install
+      define_method(:install) do
         bin.install "gonzo"
       end
     end
@@ -29,16 +29,16 @@ class Gonzo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-linux-amd64.tar.gz"
-      sha256 "73300569328549d4c08f322191a616da35d597ea230e447ada47095a4f6359a7"
-      def install
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.2/gonzo-0.3.2-linux-amd64.tar.gz"
+      sha256 "f802b95e89f719d6ed71afba8560c45178f5bac655366d3defca0e69b2ed4a6a"
+      define_method(:install) do
         bin.install "gonzo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/gonzo/releases/download/v0.3.1/gonzo-0.3.1-linux-arm64.tar.gz"
-      sha256 "669ecae052566304559e1de47fea1efbc4904c9ba36ed8a4f873957e3bf8f1dc"
-      def install
+      url "https://github.com/control-theory/gonzo/releases/download/v0.3.2/gonzo-0.3.2-linux-arm64.tar.gz"
+      sha256 "43aa26e5ebf7ab9045e3ba1b55bf5e505ca6aac847afa95c797d1fb8c9231615"
+      define_method(:install) do
         bin.install "gonzo"
       end
     end
